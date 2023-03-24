@@ -1,6 +1,7 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://admin-admin:AdminPassword12345@cluster0.06edxcq.mongodb.net/facespace', {
+mongoose.connect(process.env.MONGODB_URI || process.env.MONGOOD, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
